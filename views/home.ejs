@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Wazirx bitcoin status">
+  <meta name="keywords" content="Wazirx,bitcoin,top 10">
+  <meta name="author" content="QuadB">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/">
+  <link href="/css/sub.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+</head>
+
+<body class="add">
+  <header style="padding: 20px 30px 0px;">
+    <div id="head-section" class="align-items-center justify-content-sm-center row">
+      <div class="ownwer text-center padding-none col-12 col-sm-12 col-md-2 col-lg-4">
+        <h5>
+          <h2 style="display: inline-block;" class="head">HODLINFO</h2>.com
+        </h5>
+        <p>Powered By <span class="head">Finstreet</span></p>
+      </div>
+
+      <div class="butt-group text-center padding-none col-12 col-sm-12 col-md-2 col-lg-4">
+        <div class="btn-group">
+          <button type="button" aria-haspopup="true" aria-expanded="false"
+            class="header-button dropdown-toggle btn btn-secondary">
+            INR</button>
+          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+            <div class="dropdown-menu" aria-labelledby="cryptoDropdown" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 36px, 0px);"
+          x-placement="bottom-start">
+          <a value="BTC" tabindex="0" role="menuitem" class="dropdown-item" href="/BTC">BTC</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="cryptoDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            BTC
+          </button>
+          <div class="dropdown-menu" aria-labelledby="cryptoDropdown" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 36px, 0px);"
+          x-placement="bottom-start">
+          <a value="BTC" tabindex="0" role="menuitem" class="dropdown-item" href="/BTC">BTC</a>
+          <a value="ETH" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/ETH">ETH</a><a value="USDT" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/USDT">USDT</a><a value="XRP" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/XRP">XRP</a><a value="TRX" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/TRX">TRX</a><a value="DASH" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/DASH">DASH</a><a value="ZEC" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/ZEc">ZEC</a><a value="XEM" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/XEM">XEM</a><a value="IOST" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/IOST">IOST</a><a value="WIN" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/WIN">WIN</a><a value="BTT" tabindex="0" role="menuitem" class="dropdown-item"
+          href="/BTT">BTT</a>
+        <a value="WRX" tabindex="0" role="menuitem" class="dropdown-item" href="/WRX">WRX</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-header col-12 col-sm-12 col-md-5 col-lg-4">
+        <div class="d-inline-flex flex-wrap align-items-center justify-content-center">
+          <div class="progress-bar-wrapper">
+            <svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar"><path class="CircularProgressbar-trail" d="
+              M 50,50
+              m 0,-46
+              a 46,46 0 1 1 0,92
+              a 46,46 0 1 1 0,-92
+            " stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+              M 50,50
+              m 0,-46
+              a 46,46 0 1 1 0,92
+              a 46,46 0 1 1 0,-92
+            " stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 192.684px;"></path><text class="CircularProgressbar-text" x="50" y="50">20</text>
+          </svg>
+
+
+          </div>
+          <a class="color-white" href="https://hodlinfo.com/connect/telegram">
+            <div class="d-flex telegram-logo-text header-telegram-button btn align-items-center pointer color-white">
+              <div class="d-inline-block">
+                <img
+                  src="data:image/png;base64,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"
+                  class="telegram-logo">
+              </div>
+              <div class="text-nowrap d-inline-block color-white">Connect Telegram</div>
+            </div>
+          </a>
+          <div class="margin-10 d-inline-block bg-dark"><label class="switch bg-dark b-4">
+              <button id="toggle-button" style="color:rgba(61, 198, 193, 255);padding:10px;"></button>
+          </div>
+        </div>
+      </div>
+
+  </header>
+
+  <div class="Container-fluid " style="padding: 0px 30px;"><div class="d-flex justify-content-around align-items-center average-header" style="padding: 10px 0px;"><div class="text-center"><div class="average-header-maintext color-green">0.84 %</div><div class="average-header-subHeading">5 Mins</div></div><div class="text-center"><div class="average-header-maintext color-green">1.7 %</div><div class="average-header-subHeading">1 Hour</div></div><div style="max-width: 40%;"><div class="text-center font-32 average-block"><div class="average-subText"><span class="subText-heading">Best Price to Trade</span></div><div class="average-heading" style="padding-bottom: 10px;">₹ 25,95,464</div><div class="average-subText">Average BTC/INR net price including commission</div></div></div><div class="text-center"><div class="average-header-maintext color-green">1.8 %</div><div class="average-header-subHeading">1 Day</div></div><div class="text-center"><div class="average-header-maintext color-green">8.09 %</div><div class="average-header-subHeading">7 Days</div></div></div></div>
+
+
+  <div class="table-responsive mt-5" style="margin: 0px auto;padding:30px;">
+    <table class="table table-borderless table-dark">
+      <thead id="thead" class="thread-dark">
+        <tr class="text-secondary text-15" style="background-color:  rgba(25,29,40,255);border:none">
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">#</span></h4>
+          </th>
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">Name</span></h4>
+          </th>
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">Last</span></h4>
+          </th>
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">Buy / Sell Price</span></h4>
+          </th>
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">Volume</span></h4>
+          </th>
+          <th scope="col" style="border-top:0px; border-bottom: 0px;">
+            <h4><span class="pointer">Base_unit</span></h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let i=0; i<10; i++) { %>
+          <tr
+            style="border: 15px solid rgba(25,29,40,255);border-collapse: separate;padding: 100px;background-color: #2e3241">
+            <td style="border-top:0px;" class="align-middle">
+              <h4 class="table-text text-white">
+                <%= i+1 %>
+              </h4>
+            </td>
+            <td style="border-top:0px" class="align-middle">
+              
+              <h4 class="table-text text-white">
+              <img src="data:image/png;base64,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" class="exchange-logo">
+
+                <%= responce[i].name %>
+              </h4>
+            </td>
+            <td style="border-top:0px" class="align-middle">
+              <h4 class="table-text">₹ <%= responce[i].last %>
+              </h4>
+            </td>
+            <td style="border-top:0px" class="align-middle">
+              <h4 class="table-text"><span>₹ <%= responce[i].bs %></span></h4>
+            </td>
+            <td style="border-top:0px" class="align-middle">
+              <h4 class="table-text color-white">
+                <%= responce[i].volume %>
+              </h4>
+            </td>
+            <td style="border-top:0px" class="align-middle">
+              <h4 class="table-text color-white">
+                <%= responce[i].base_unit %>
+              </h4>
+            </td>
+          </tr>
+          <% } %>
+      </tbody>
+    </table>
+  </div>
+  <div class="d-flex justify-content-center" style="border:solid 1px #191d28;background-color:#191d28;position:fixed;left:0;align-items:center;width:100vw;height:47px;bottom:0;z-index:8"><button class="add-button btn btn-outline-info" style="display: block;">Add hodlinfo to home screen</button></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/2.a0dcae0d.chunk.js"></script>
+  <script src="js/main.6e9412b1.chunk.js"></script>
+</body>
+
+
+</html>
+
+
